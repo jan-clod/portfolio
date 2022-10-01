@@ -5,8 +5,8 @@ export const Main = () => {
     return (
         <div className={s.mainBlock}>
             <div className={`${s.mainContainer} ${s.container}`}>
-                <div className={s.mainPhoto}>
-                    <img src="https://www.google.com/search?q=developer&sxsrf=ALiCzsZmAkDWlNjuG32NG_lBkUEfPXIFJw:1661341525741&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjV6ve7s9_5AhVKnKQKHR4FA7IQ_AUoAXoECAMQAw&biw=1745&bih=852&dpr=1.1#imgrc=R_3CI3ihviVCWM" alt="404" />
+                <div >
+                    <img className={s.mainPhoto} src="https://sun2.beltelecom-by-minsk.userapi.com/impf/c848620/v848620654/8881a/IrzF3m8iyrk.jpg?size=1080x607&quality=96&sign=5e380dd07ab2c15c9bc0f9adb561052b&type=album" alt="404" />
                 </div>
                 <div className={s.mainInfo}>
                     <h1>Тимофеев Ян Сергеевич</h1>
