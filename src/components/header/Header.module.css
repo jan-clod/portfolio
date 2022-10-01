@@ -19,11 +19,12 @@
 /* ------------header---------- */
 .head {
   position: fixed;
-  height: 80px;
+  height: 60px;
   width: 100vw;
   z-index: 2;
 
-  background-color: rgb(188, 214, 237);
+  background-color: rgba(240, 248, 255, 0.968);
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.3);
 
   display: flex; /* задаем родителю */
   justify-content: flex-end; /* дочерние элементы в конец по горизонтальной оси */
@@ -77,12 +78,9 @@
 
 }
 .skillTitle {
-  width: 80vw;
-  margin:  0px auto;
+  width: 100vw;
+  position: absolute;
 
-  background-color: #ffffff60;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
   z-index: 3;
 }
 
@@ -106,8 +104,21 @@
 
 /* ----------mywork----------------- */
 .myWorksBlock {
-  background-color: aliceblue;
 }
 .myWorksContainer {
   height: 100vh;
+  
+  background-color: #ffffff60;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+.OneWorksBlock{
+  text-align: center;
+  display: flex;
+
+}
+.imgWork{
+  background-color: antiquewhite;
+  height: 200px;
+  width: 300px;
 }
