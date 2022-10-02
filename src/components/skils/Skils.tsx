@@ -11,6 +11,8 @@ export const Skils = () => {
                 <Skill name={'react '} body={'i leern react '} img={'https://storage.googleapis.com/indie-hackers.appspot.com/product-avatars/react-tutorial/9oI3y6pGdIOlO0cYhTeldDBqpWu1?avatarupdatetimestamp=undefined'} />
                 <Skill name={'js '} body={text2} img={'https://kursosliv.com/wp-content/uploads/2022/07/udemy-sovremennyj-javascript-s-nulya-na-realnyh-proektah-denis-meshheryakov_62db46f3becee.png'} />
                 <Skill name={'html '} body={text} img={'https://www.clipartmax.com/png/full/171-1719778_html5-html5-logo-png.png'} />
+                <Skill name={'html '} body={text} img={'https://www.clipartmax.com/png/full/171-1719778_html5-html5-logo-png.png'} />
+                <Skill name={'react '} body={'i leern react '} img={'https://storage.googleapis.com/indie-hackers.appspot.com/product-avatars/react-tutorial/9oI3y6pGdIOlO0cYhTeldDBqpWu1?avatarupdatetimestamp=undefined'} />
             </div>
         </div>
 

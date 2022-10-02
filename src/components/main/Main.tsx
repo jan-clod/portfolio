@@ -6,7 +6,7 @@ export const Main = () => {
         <div className={s.mainBlock}>
             <div className={`${s.mainContainer} ${s.container}`}>
                 <div >
-                    <img className={s.mainPhoto} src="https://sun2.beltelecom-by-minsk.userapi.com/impf/c848620/v848620654/8881a/IrzF3m8iyrk.jpg?size=1080x607&quality=96&sign=5e380dd07ab2c15c9bc0f9adb561052b&type=album" alt="404" />
+                    <img className={s.mainPhoto} src="https://sun9-41.userapi.com/impg/6rAvsatBEu70G57d0txaX6qbvOI95WuuyUEx-Q/fCNJ6hxaaiQ.jpg?size=1080x1080&quality=95&sign=b29d2018e9526de4828049c7bbb92c83&type=album" alt="404" />
                 </div>
                 <div className={s.mainInfo}>
                     <h1>Тимофеев Ян Сергеевич</h1>

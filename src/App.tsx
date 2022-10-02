@@ -11,12 +11,6 @@ function App() {
       <Main />
       <Skils />
       <MyWorks/>
-      <div>Block1</div>
-      <div>Block2</div>
-      <div>Block3</div>
-      <div>Block4</div>
-      <div>Block5</div>
-      <div>Footer</div>
     </div>
   );
 }

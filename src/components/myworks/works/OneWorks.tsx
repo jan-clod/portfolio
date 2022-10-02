@@ -1,19 +1,30 @@
 import s from './../../header/Header.module.css'
 
 type propsType = {
-    name:string
+    name: string
     img: string
-    text:string
+    img2?: string
+    img3?: string
+    text: string
 }
-export const OneWorks = (props:propsType) => {
+export const OneWorks = (props: propsType) => {
 
     return (
         <div className={s.OneWorksBlock}>
-            <img className={s.imgWork} src={props.img} alt="404" />
-         
-            <div className={`${s.OneWorksContainer}`}>
+            <div className={s.NameOneWork}>
                 <h2>{props.name}</h2>
-                <p>{props.text}</p>
+            </div>
+
+            <div className={s.blockImgText}>
+                <div className={s.imgDivOneWork}>
+                    <img className={s.imgWork} src={props.img} alt="404" />
+                    {props.img2 && <img className={s.imgWork} src={props.img2} alt="404" />}
+                    {props.img3 && <img className={s.imgWork} src={props.img3} alt="404" />}
+                </div>
+
+                <div className={`${s.DivTextOneWork}`}>
+                    <p>{props.text}</p>
+                </div>
             </div>
         </div>
 
