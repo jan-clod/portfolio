@@ -1,20 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Quattrocento+Sans&display=swap");
 .App {
-  background-image: url("https://img5.goodfon.ru/original/1920x1080/5/7d/volny-tekstury-sinie-ottenki.jpg");
+  /*     background-image: url("https://img5.goodfon.ru/original/1920x1080/5/7d/volny-tekstury-sinie-ottenki.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
+  background-image: url('fon3.jpg');
+  background-position: center center;
+  background-attachment: fixed; */
+  background: rgb(31, 31, 31);
+  background: linear-gradient(
+    90deg,
+    rgba(31, 31, 31, 1) 19%,
+    rgba(51, 51, 51, 1) 89%
+  );
+  color: rgb(255, 255, 255);
+  font-family: "Poiret One", cursive;
+}
+.App a {
+  text-decoration: none;
+  color: aliceblue;
 }
 
 .container {
-  box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.17);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
   height: max-content;
   min-height: 100vh;
   width: 80vw;
+
+  background-color:rgba(51, 51, 51, 1);
+
   margin: 0 auto;
   margin-bottom: 30px;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  border-radius: 30px;
+  backdrop-filter: blur(1px);
+  box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.353);
+}
+.myColor {
+  background-color: rgb(0, 0, 0); /* header,  */
+  background: linear-gradient(
+    90deg,
+    rgba(31, 31, 31, 1) 19%,
+    rgba(51, 51, 51, 1) 89%   /* fon */
+  );
 }
 
 /* ------------header---------- */
@@ -22,44 +53,69 @@
   position: fixed;
   height: 60px;
   width: 100vw;
-  z-index: 2;
+  z-index: 4;
 
-  background-color: rgba(240, 248, 255, 0.968);
+  background-color: rgb(0, 0, 0);
   box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid rgb(255, 200, 0);
 
   display: flex; /* задаем родителю */
-  justify-content: flex-end; /* дочерние элементы в конец по горизонтальной оси */
+  justify-content: space-between; /* дочерние элементы в конец по горизонтальной оси */
   align-items: center; /* дочерние элементы по центру по вертикальной оси */
+}
+.head h1 {
+  margin: 0 30px;
 }
 
 /* -------------nav--------------- */
 .nav {
-  border: 1px solid red;
+  margin-right: 100px;
   width: 300px;
   display: flex; /* задаем ребенку */
   justify-content: space-between; /* растягивает на ширину родит блока с равными промежутками между ними */
+}
+.nav p{
+  cursor: pointer;
 }
 
 /* -------------main----------------- */
 
 .mainContainer {
-  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 
-  background-color: #ffffff60;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  height: max-content;
+  min-height: 100vh;
+  width: 80vw;
 
-  z-index: 1;
+  margin: 0 auto;
+
+  /*  
+  background-color: #020c249f;
+  margin-bottom: 30px;
+  border-radius: 50px;
+  backdrop-filter: blur(5px);
+  box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.17); */
+}
+.helloPage {
+  display: flex;
+  align-items: center;
 }
 .mainInfo {
   width: 300px;
-  background-color: rgb(253, 251, 246);
+  height: 300px;
   padding: 20px;
-  border-radius: 6px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(1, 12, 21);
 }
 .mainPhoto {
-  width: 300px;
-  border-radius: 6px;
+  width: 600px;
+  background-color: rgb(255, 200, 0);
+}
+.mainPhoto img {
+  width: 100%;
 }
 
 /* -----------skillSSS-------------- */
@@ -70,27 +126,26 @@
   justify-content: space-around;
   padding-top: 70px;
 
-  background-color: #ffffff60;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 }
 .skillTitle {
   width: 100vw;
   position: absolute;
-
   z-index: 3;
 }
 
 /* ------------skill----------------- */
 .skilContainer {
   display: flex;
-  margin: 15px;
-  padding: 15px;
-  width: 270px;
-  min-height: 300px;
-  background-color: aliceblue;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
+
+  margin: 15px;
+  padding: 30px;
+  width: 250px;
+  min-height: 300px;
+  background-color: rgba(1, 15, 27, 0.168);
   border-radius: 6px;
 }
 .icon {
@@ -100,12 +155,13 @@
 }
 
 /* ----------mywork----------------- */
-.myWorksBlock {
-}
+
 .myWorksContainer {
-  background-color: #ffffff60;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
+}
+.myWorksContainer h1 {
+  margin: 3vh auto 0 auto;
 }
 
 /* ----------OneWork-------------- */
@@ -114,19 +170,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.OneWorksBlock {
-  text-align: center;
-  display: flex;
+  text-align: justify;
   justify-content: space-around;
-  text-align: center;
   margin: 4vh 8vw;
-
- /*  background-color: #03295ad1; */
+  font-size: large;
 }
 
 .imgWork {
-  background-color: antiquewhite;
   height: 200px;
   width: 300px;
 }
@@ -135,8 +185,37 @@
 }
 .DivTextOneWork {
 }
-.imgDivOneWork{
+.imgDivOneWork {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  
+}
+/* ----------DownBack--------------- */
+.blockDown {
+  width: 100vw;
+  height: 300px;
+
+  background-color:rgba(31, 31, 31, 1);
+
+  /*   margin-top: -200px; */
+}
+
+@media (max-width: 1081px) {
+  .mainContainer {
+    align-items: flex-start;
+  }
+
+  .mainPhoto {
+    margin-top: 15vh;
+    width: 95vw;
+    height: 100%;
+  }
+  .container {
+    width: 100vw;
+    border-radius: 10px;
+  }
+  .helloPage {
+    display: flex;
+    flex-direction: column;
+  }
 }

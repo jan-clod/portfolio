@@ -5,7 +5,9 @@ export const Header = () => {
 
     return (
         <div className={s.head}>
-            Header
+            <h1>
+                _Jan_clod_
+            </h1>
             <Nav />
         </div>
 

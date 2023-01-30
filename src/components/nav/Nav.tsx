@@ -1,14 +1,18 @@
 import s from './../header/Header.module.css'
 
 export const Nav = () => {
-
+    const click = ( num:number) => {
+        window.scrollTo({
+            top: num,
+            behavior: 'smooth'
+        })
+    }
     return (
         <div className={s.nav}>
-            <a href="q">Главное</a>
-            <a href="w">Скилы</a>
-            <a href="e">Проекты</a>
-            <a href="r">Контакты</a>
-            <a href="t">ост</a>
+            <p onClick={()=>click(0)}>Главное</p>
+            <p onClick={()=>click(850)}>Скилы</p>
+            <p onClick={()=>click(1900)}>Проекты</p>
+            <p onClick={()=>click(3000)}>Контакты</p>
         </div>
 
     )

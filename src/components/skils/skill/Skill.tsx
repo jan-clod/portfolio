@@ -10,7 +10,7 @@ export const Skill = (props: SkillType) => {
 
     return (
         <div className={`${s.skilContainer} `}>
-            <div >
+            <div>
                 <img className={s.icon} src={props.img} alt="404" />
             </div>
             <h3>{props.name}</h3>

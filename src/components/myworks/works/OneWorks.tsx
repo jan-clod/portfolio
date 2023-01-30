@@ -5,6 +5,7 @@ type propsType = {
     img: string
     img2?: string
     img3?: string
+    href?: string
     text: string
 }
 export const OneWorks = (props: propsType) => {
@@ -12,7 +13,7 @@ export const OneWorks = (props: propsType) => {
     return (
         <div className={s.OneWorksBlock}>
             <div className={s.NameOneWork}>
-                <h2>{props.name}</h2>
+                <h2><a href={props.href}>{props.name}</a></h2>
             </div>
 
             <div className={s.blockImgText}>

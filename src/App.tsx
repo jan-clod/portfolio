@@ -3,6 +3,7 @@ import { Main } from "./components/main/Main";
 import { MyWorks } from "./components/myworks/MyWorks";
 import { Skils } from "./components/skils/Skils";
 import s from './components/header/Header.module.css'
+import { DownBack } from "./components/downback/DownBack";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Main />
       <Skils />
       <MyWorks/>
+      <DownBack/>
     </div>
   );
 }
