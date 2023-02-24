@@ -11,7 +11,7 @@ export const Main = () => {
                 <div className={s.helloPage}>
 
                     <div className={s.mainPhoto}>
-                        <img src="https://img.freepik.com/free-photo/blithesome-student-green-t-shirt-posing-with-laptop-indoor-photo-amazed-male-freelancer-isolated_197531-20164.jpg?w=1380&t=st=1675072958~exp=1675073558~hmac=d4eca9b6d3d3ce9ca8f79cd2844e761e48ed140e74e383fbb0ab6ddebc01e7a3" /* "https://sun9-41.userapi.com/impg/6rAvsatBEu70G57d0txaX6qbvOI95WuuyUEx-Q/fCNJ6hxaaiQ.jpg?size=1080x1080&quality=95&sign=b29d2018e9526de4828049c7bbb92c83&type=album" */ alt="404" />
+                        <img src="https://sun9-5.userapi.com/impg/t29WpcYNLJt0kjnoX1RWBGd-SlmDNRaVsx2_sg/5tV5lWmX3kE.jpg?size=1318x876&quality=95&sign=d218b62d7a63398beadc47961701ef62&type=album" alt="404" />
                     </div>
 
                     <div className={s.mainInfo}>
