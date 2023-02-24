@@ -12,7 +12,7 @@ export const Nav = () => {
             <p onClick={()=>click(0)}>Главное</p>
             <p onClick={()=>click(850)}>Скилы</p>
             <p onClick={()=>click(1900)}>Проекты</p>
-            <p onClick={()=>click(3000)}>Контакты</p>
+            <p onClick={()=>click(3200)}>Контакты</p>
         </div>
 
     )

@@ -1,17 +1,21 @@
 import s from './../header/Header.module.css'
 import { Skill } from './skill/Skill'
-import {text,text2,link,link2,link3,link4,link5} from './../../value.js'
+import { textHTML, textJS, textTS, textREACT, textREDUX, textGIT, textALL, textCSS, linkREDUX, linkJS, linkGIT, linkALL, linkCSS, linkHTML, linkREACT, linkTS } from './../../value.jsx'
 
 export const Skils = () => {
     return (
         <div className={`${s.skillsBlock} `}>
-                <h1 className={s.skillTitle}>skills</h1>
+            <h1 className={s.skillTitle}>skills</h1>
             <div className={`${s.skilsContainer} ${s.container}`}>
-                <Skill name={'react '} body={'i leern react '} img={link} />
-                <Skill name={'js '} body={text2} img={link2} />
-                <Skill name={'html '} body={text} img={link3} />
-                <Skill name={'html '} body={text} img={link4} />
-                <Skill name={'react '} body={'i leern react '} img={link5} />
+                <Skill name={'html '} body={textHTML} img={linkHTML} />
+                <Skill name={'css '} body={textCSS} img={linkCSS} />
+                <Skill name={'js '} body={textJS} img={linkJS} />
+                <Skill name={'ts '} body={textTS} img={linkTS} />
+
+                <Skill name={'react '} body={textREACT} img={linkREACT} />
+                <Skill name={'git '} body={textGIT} img={linkGIT} />
+                <Skill name={'redux '} body={textREDUX} img={linkREDUX} />
+                <Skill name={'all '} body={textALL} img={linkALL} />
             </div>
         </div>
     )

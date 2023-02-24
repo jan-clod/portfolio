@@ -1,0 +1,10 @@
+{
+    "name": "JanCl0d",
+    "short_name": "_Cl0d",
+    "theme_color": "#f36d21",
+    "background_color": "#2196f3",
+    "display": "browser",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/JanCl0d"
+  }

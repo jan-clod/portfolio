@@ -1,4 +1,6 @@
+import { textHTML } from '../../value'
 import s from './../header/Header.module.css'
+import 'animate.css';
 
 export const Main = () => {
 
@@ -12,14 +14,9 @@ export const Main = () => {
                     </div>
 
                     <div className={s.mainInfo}>
-                        <h1>Тимофеев Ян Сергеевич</h1>
-                        <ul>
-                            <li>Беларусь г.Пинск</li>
-                            <li>+375 29 364 83 53</li>
-                            <li>25 лет, родился: 7 июля 1997</li>
-                            <li>почта: fia.yan@mail.ru</li>
-                            <li>готов как к перезду так и к удаленной работе</li>
-                        </ul>
+                        <h2 className={` ${"animate__animated animate__zoomInRight"}`}>Тимофеев Ян Сергеевич</h2>
+                        <h3>Обо мне:</h3>
+                        <p>{textHTML}</p>
                     </div>
 
                 </div>

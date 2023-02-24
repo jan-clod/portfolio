@@ -31,7 +31,7 @@
   min-height: 100vh;
   width: 80vw;
 
-  background-color:rgba(51, 51, 51, 1);
+  background-color: rgba(51, 51, 51, 1);
 
   margin: 0 auto;
   margin-bottom: 30px;
@@ -44,8 +44,9 @@
   background: linear-gradient(
     90deg,
     rgba(31, 31, 31, 1) 19%,
-    rgba(51, 51, 51, 1) 89%   /* fon */
+    rgba(51, 51, 51, 1) 89% /* fon */
   );
+  background-color: rgba(31, 31, 31, 1); /* down */
 }
 
 /* ------------header---------- */
@@ -74,7 +75,7 @@
   display: flex; /* задаем ребенку */
   justify-content: space-between; /* растягивает на ширину родит блока с равными промежутками между ними */
 }
-.nav p{
+.nav p {
   cursor: pointer;
 }
 
@@ -124,10 +125,9 @@
 }
 .skilsContainer {
   justify-content: space-around;
+  align-items: flex-start;
   padding-top: 70px;
 
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
 }
 .skillTitle {
   width: 100vw;
@@ -144,9 +144,12 @@
   margin: 15px;
   padding: 30px;
   width: 250px;
-  min-height: 300px;
+  min-height: 250px;
   background-color: rgba(1, 15, 27, 0.168);
   border-radius: 6px;
+
+  font-size:larger
+
 }
 .icon {
   filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.3));
@@ -178,12 +181,16 @@
 
 .imgWork {
   height: 200px;
-  width: 300px;
+  margin: 30px;
 }
 .blockImgText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
   margin: 20px auto;
-}
-.DivTextOneWork {
+  font-size:larger
+
 }
 .imgDivOneWork {
   display: flex;
@@ -195,9 +202,17 @@
   width: 100vw;
   height: 300px;
 
-  background-color:rgba(31, 31, 31, 1);
+  background-color: rgba(31, 31, 31, 1);
 
+  font-size:larger
   /*   margin-top: -200px; */
+}
+.blockDown ul{
+  margin-left: 30px;
+}
+.h1Y {
+  margin-top: 100px;
+  text-align: center;
 }
 
 @media (max-width: 1081px) {

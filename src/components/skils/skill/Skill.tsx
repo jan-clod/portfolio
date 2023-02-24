@@ -2,7 +2,7 @@ import s from './../../header/Header.module.css'
 
 type SkillType = {
     name: string
-    body: string
+    body: any
     img: string
 }
 
