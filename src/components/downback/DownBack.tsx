@@ -13,7 +13,6 @@ export const DownBack = () => {
                 <li>25 лет, родился: 7 июля 1997</li>
                 <li>почта:fia.yan@mail.ru</li>
                 <li>мой  <a href="https://github.com/jan-clod/">gitHub</a></li>
-                <li>готов как к перезду так и к удаленной работе</li>
                 <li>width screen:_{wind}</li>
                 <li>height screen:_{height}</li>
             </ul>
