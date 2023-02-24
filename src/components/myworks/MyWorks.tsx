@@ -14,10 +14,15 @@ let aim4img = 'https://sun9-29.userapi.com/impg/NGWpBY6S84ikAzg2V5H-mPAdptDC1Jlx
 
 export const MyWorks = () => {
 
+    const ev = (event:any) => {
+        console.log(window.pageYOffset);
+    }
+    /* console.log(); */
+
     return (
         <div className={s.myWorksBlock}>
             <div className={`${s.myWorksContainer} ${s.container}`}>
-                <h1>Mои работы</h1>
+                <h1 onClick={(event)=>ev(event)} >Mои работы</h1>
 
                 <OneWorks
                     name={'Social Network'}
@@ -27,7 +32,6 @@ export const MyWorks = () => {
                     img2={'https://sun9-84.userapi.com/impg/bmCXxkzHKViLU0jpajB__F-GoAk4N6-EEwVTjg/ftntmpHSbFQ.jpg?size=1911x927&quality=95&sign=596333bf5bde9ca84b4040533e95be76&type=album'}
                     img3={'https://sun9-31.userapi.com/impg/YiB1ZJ6pHKo3HgOXDqE9KnoXysOS7VvK8kMnUg/Dotw5fMt0dE.jpg?size=1890x931&quality=95&sign=8b88507bd3a6b26e1c5f64a53228d4a5&type=album'}
                 />
-
                 <OneWorks
                     name={'ToDoList'}
                     text={textToDoList}

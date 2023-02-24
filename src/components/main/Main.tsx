@@ -1,9 +1,10 @@
-import { textHTML } from '../../value'
 import s from './../header/Header.module.css'
 import 'animate.css';
 
 export const Main = () => {
-
+    let textHTML = `Мне 25 лет,живу в Беларуси и я начинающий frontend developer.`
+    let textHTML2 = `По образованию: "дизайнер оформитель", учитель. Обучался как по платным курсам так и самостоятельно`
+    let textHTML3 = `Обучался как по платным курсам так и самостоятельно`
     return (
         <div className={s.mainBlock}>
             <div className={`${s.mainContainer} `}>
@@ -15,8 +16,10 @@ export const Main = () => {
 
                     <div className={s.mainInfo}>
                         <h2 className={` ${"animate__animated animate__zoomInRight"}`}>Тимофеев Ян Сергеевич</h2>
-                        <h3>Обо мне:</h3>
-                        <p>{textHTML}</p>
+                        <h3 className={` ${"animate__animated animate__zoomInRight"}`}>Обо мне:</h3>
+                        <p className={` ${"animate__animated animate__zoomInLeft"}`}>{textHTML}</p>
+                        <p className={` ${"animate__animated animate__zoomInLeft"}`}>{textHTML2}</p>
+                        <p className={` ${"animate__animated animate__zoomInLeft"}`}>{textHTML3}</p>
                     </div>
 
                 </div>
