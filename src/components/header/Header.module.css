@@ -7,6 +7,7 @@
 :root{
   background-color: rgb(52, 54, 54);
 }
+html { overflow-x:  hidden; }
 .App {
   /*     background-image: url("https://img5.goodfon.ru/original/1920x1080/5/7d/volny-tekstury-sinie-ottenki.jpg");
   background-repeat: no-repeat;
@@ -79,14 +80,13 @@
 
 /* -------------nav--------------- */
 .nav {
-  margin-right: 100px;
   width: 300px;
   display: flex; /* задаем ребенку */
   justify-content: space-between; /* растягивает на ширину родит блока с равными промежутками между ними */
 }
 .nav p {
   cursor: pointer;
-  margin-right: 20px;
+/*   margin-right: 20px; */
 }
 
 /* -------------main----------------- */
@@ -233,6 +233,9 @@
 }
 
 @media (max-width: 1081px) {
+  .head h1 {
+    margin: 0 3px;
+  }
   .mainContainer {
     align-items: flex-start;
   }
@@ -247,7 +250,7 @@
     width: 100vw;
   }
   .imgWork {
-    height: 200px;
+    height: 150px;
     margin: 30px 0;
   }
   .mainPhoto {
