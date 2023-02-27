@@ -14,7 +14,7 @@ export const Nav = () => {
             <p onClick={()=>click(0)}>Главная</p>
             <p onClick={()=>click(850)}>Скилы</p>
             <p onClick={()=>click(1900)}>Проекты</p>
-            <p onClick={()=>click(8100)}>Контакты</p>
+            <p onClick={()=>click(9000)}>Контакты</p>
         </div>
 
     )

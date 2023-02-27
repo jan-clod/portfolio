@@ -129,6 +129,9 @@ a :hover {
   background-color: rgb(255, 255, 255);
   color: rgb(1, 12, 21);
 }
+.mainInfo a {
+  color: black;
+}
 .mainPhoto {
   width: 600px;
   background-color: rgb(255, 200, 0);
@@ -219,7 +222,7 @@ a :hover {
 /* ----------DownBack--------------- */
 .blockDown {
   width: 100vw;
-  height: 300px;
+  height: 400px;
 
   background-color: rgba(31, 31, 31, 1);
 
@@ -229,10 +232,21 @@ a :hover {
   margin-left: 30px;
   font-family: "Exo 2", sans-serif;
 }
+.blockDown li {
+  list-style-type: none; /* Убираем маркеры */
+  height: 40px;
+  font-size: 20px;
+}
+.blockDown img{
+  height: 25px;
+  margin-right: 10px;
+}
+
 .h1Y {
   margin-top: 100px;
   text-align: center;
 }
+
 
 @media (max-width: 1081px) {
   .container {

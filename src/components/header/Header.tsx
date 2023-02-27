@@ -7,7 +7,7 @@ export const Header = () => {
     return (
         <div className={s.head}>
             <h1 className={` ${"animate__animated animate__zoomInLeft"}`}>
-                _Jan_clod_
+                Yan Timofeev
             </h1>
             <Nav />
         </div>

@@ -5,6 +5,7 @@ export const Main = () => {
     let textHTML = `Мне 25 лет,живу в Беларуси и я начинающий frontend developer.`
     let textHTML2 = `По образованию: "дизайнер оформитель", учитель.`
     let textHTML3 = `Обучался как по платным курсам так и самостоятельно`
+    let textHTML4 = `Обучался как по платным курсам так и самостоятельно`
     return (
         <div className={s.mainBlock}>
             <div className={`${s.mainContainer} `}>
@@ -20,6 +21,7 @@ export const Main = () => {
                         <p className={` ${"animate__animated animate__zoomInLeft"}`}>{textHTML}</p>
                         <p className={` ${"animate__animated animate__zoomInLeft"}`}>{textHTML2}</p>
                         <p className={` ${"animate__animated animate__zoomInLeft"}`}>{textHTML3}</p>
+                        <p className={` ${"animate__animated animate__zoomInLeft"}`}>🔗<a href='https://docs.google.com/document/d/1ENr1YUgJ9ekScVZl6guCHrCRxcJYLFA5/edit?usp=sharing&ouid=100583517082982250182&rtpof=true&sd=true'>моё резюме</a></p>
                     </div>
 
                 </div>
