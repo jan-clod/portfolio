@@ -3,7 +3,7 @@ import 'animate.css';
 
 export const Main = () => {
     let textHTML = `Мне 25 лет,живу в Беларуси и я начинающий frontend developer.`
-    let textHTML2 = `По образованию: "дизайнер оформитель", учитель. Обучался как по платным курсам так и самостоятельно`
+    let textHTML2 = `По образованию: "дизайнер оформитель", учитель.`
     let textHTML3 = `Обучался как по платным курсам так и самостоятельно`
     return (
         <div className={s.mainBlock}>

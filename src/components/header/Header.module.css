@@ -1,13 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Quattrocento+Sans&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=News+Cycle&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=News+Cycle&display=swap");
 
-:root{
+:root {
   background-color: rgb(52, 54, 54);
 }
-html { overflow-x:  hidden; }
+html {
+  overflow-x: hidden;
+}
 .App {
   /*     background-image: url("https://img5.goodfon.ru/original/1920x1080/5/7d/volny-tekstury-sinie-ottenki.jpg");
   background-repeat: no-repeat;
@@ -26,8 +28,11 @@ html { overflow-x:  hidden; }
   font-family: "Poiret One", cursive;
 }
 .App a {
-  text-decoration: none;
+  /*   text-decoration: none; */
   color: aliceblue;
+}
+a :hover {
+  cursor: pointer;
 }
 
 .container {
@@ -39,8 +44,6 @@ html { overflow-x:  hidden; }
   min-height: 100vh;
   width: 80vw;
 
-
-  
   background-color: rgba(51, 51, 51, 1);
 
   margin: 0 auto;
@@ -83,10 +86,13 @@ html { overflow-x:  hidden; }
   width: 300px;
   display: flex; /* задаем ребенку */
   justify-content: space-between; /* растягивает на ширину родит блока с равными промежутками между ними */
+
+  margin-right: 40px;
 }
 .nav p {
   cursor: pointer;
-/*   margin-right: 20px; */
+
+  /*   margin-right: 20px; */
 }
 
 /* -------------main----------------- */
@@ -97,7 +103,7 @@ html { overflow-x:  hidden; }
   align-items: center;
   justify-content: center;
 
-  font-family: 'Exo 2', sans-serif;
+  font-family: "Exo 2", sans-serif;
 
   height: max-content;
   min-height: 100vh;
@@ -139,7 +145,6 @@ html { overflow-x:  hidden; }
   justify-content: space-around;
   align-items: flex-start;
   padding-top: 70px;
-
 }
 .skillTitle {
   width: 100vw;
@@ -160,8 +165,7 @@ html { overflow-x:  hidden; }
   background-color: rgba(1, 15, 27, 0.168);
   border-radius: 6px;
 
-  font-size:larger
-
+  font-size: larger;
 }
 .icon {
   filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.3));
@@ -190,8 +194,8 @@ html { overflow-x:  hidden; }
   margin: 4vh 8vw;
   font-size: large;
 
-  font-family: 'Exo 2', sans-serif;
-  font-family: 'News Cycle', sans-serif;
+  font-family: "Exo 2", sans-serif;
+  font-family: "News Cycle", sans-serif;
 }
 
 .imgWork {
@@ -204,9 +208,8 @@ html { overflow-x:  hidden; }
   align-items: center;
   text-align: justify;
   margin: 20px auto;
-  font-size:larger;
+  font-size: larger;
   width: 90%;
-
 }
 .imgDivOneWork {
   display: flex;
@@ -220,12 +223,11 @@ html { overflow-x:  hidden; }
 
   background-color: rgba(31, 31, 31, 1);
 
-  font-size:larger;
+  font-size: larger;
 }
-.blockDown ul{
+.blockDown ul {
   margin-left: 30px;
-  font-family: 'Exo 2', sans-serif;
-
+  font-family: "Exo 2", sans-serif;
 }
 .h1Y {
   margin-top: 100px;
@@ -233,8 +235,19 @@ html { overflow-x:  hidden; }
 }
 
 @media (max-width: 1081px) {
+  .container {
+    width: 100vw;
+    border-radius: 10px;
+  }
   .head h1 {
     margin: 0 3px;
+  }
+  .nav {
+    margin-right: 10px;
+  }
+  .helloPage {
+    display: flex;
+    flex-direction: column;
   }
   .mainContainer {
     align-items: flex-start;
@@ -257,13 +270,5 @@ html { overflow-x:  hidden; }
     margin-top: 15vh;
     width: 95vw;
     height: 100%;
-  }
-  .container {
-    width: 100vw;
-    border-radius: 10px;
-  }
-  .helloPage {
-    display: flex;
-    flex-direction: column;
   }
 }

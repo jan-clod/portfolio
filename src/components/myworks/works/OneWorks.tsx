@@ -15,7 +15,7 @@ export const OneWorks: React.FC<propsType> = ({name,img,img2,img3,img4,text,href
 
     return (
         <div className={s.OneWorksBlock}>
-            <div className={s.NameOneWork}>
+            <div className={'🔗' + s.NameOneWork}>
                 <h2><a href={href}>{name}</a></h2>
             </div>
 
