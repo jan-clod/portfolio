@@ -1,3 +1,5 @@
+
+export let textHTML = 'семантика, BEM'
 export let textCSS = 'Владею базовыми знаниями СSS. В основном работал через Flex но также использовал при верстке Grid. Работал с медиа-запросами'
 export let textJS = 'strict mode, spread… & …rest, методы [arr], методы {obj}, _proto_ / prototype, контекст: .this, классы, AsynchronousJs: callback, promises, async/await, AJAX, API: fetch, XMLHTTPRequest, event Loop, DOM & Virtual Dom, event bubbling, Scope, замыкание, управление памятью '
 export let textTS = 'class, type, inrterface, private/public, встроеные типы и неявная типизация, джинерки, кортежи, перечисления...'

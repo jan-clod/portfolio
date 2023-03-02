@@ -1,13 +1,13 @@
 import s from './../header/Header.module.css'
 import { Skill } from './skill/Skill'
-import {  textJS, textTS, textREACT, textREDUX, textGIT, textALL, textCSS, linkREDUX, linkJS, linkGIT, linkALL, linkCSS, linkHTML, linkREACT, linkTS } from './../../value.jsx'
+import {  textHTML, textJS, textTS, textREACT, textREDUX, textGIT, textALL, textCSS, linkREDUX, linkJS, linkGIT, linkALL, linkCSS, linkHTML, linkREACT, linkTS } from './../../value.jsx'
 
 export const Skils = () => {
     return (
         <div className={`${s.skillsBlock} `}>
             <h1 className={s.skillTitle}>skills</h1>
             <div className={`${s.skilsContainer} ${s.container}`}>
-                <Skill name={'html '} body={''} img={linkHTML} />
+                <Skill name={'html '} body={textHTML} img={linkHTML} />
                 <Skill name={'css '} body={textCSS} img={linkCSS} />
                 <Skill name={'js '} body={textJS} img={linkJS} />
                 <Skill name={'ts '} body={textTS} img={linkTS} />
