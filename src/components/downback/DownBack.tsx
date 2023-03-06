@@ -10,7 +10,7 @@ export const DownBack = () => {
     /*     console.log(window.pageYOffset); */
 
     return (
-        <div className={`${s.blockDown}`}>
+        <div className={`${s.blockDown}`} >
 
             <ul>
 
