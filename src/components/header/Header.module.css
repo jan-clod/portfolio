@@ -229,8 +229,11 @@ a :hover {
   font-size: larger;
 }
 .blockDown ul {
-  margin-left: 30px;
   font-family: "Exo 2", sans-serif;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 80px;
 }
 .blockDown li {
   list-style-type: none; /* Убираем маркеры */
@@ -238,12 +241,18 @@ a :hover {
   font-size: 20px;
 }
 .blockDown img{
-  height: 25px;
-  margin-right: 10px;
+  height: 45px;
+  margin: 10px;
 }
-
+.blockDown p{
+  font-family: "Exo 2", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
 .h1Y {
-  margin-top: 100px;
+  margin-top: 50px;
   text-align: center;
 }
 
