@@ -11,7 +11,7 @@ export const Main = () => {
                 <div className={s.helloPage}>
 
                     <div className={s.mainPhoto}>
-                        <img src="https://sun9-5.userapi.com/impg/t29WpcYNLJt0kjnoX1RWBGd-SlmDNRaVsx2_sg/5tV5lWmX3kE.jpg?size=1318x876&quality=95&sign=d218b62d7a63398beadc47961701ef62&type=album" alt="404" />
+                        <img src="https://sun9-44.userapi.com/impg/Sq29-pVTbSAcKECj4Jpb2mnlsux7rw9ea6dZEA/V91ChBkB6kQ.jpg?size=1318x876&quality=95&sign=0264c40db691ef4bdbba1bb87585ffe7&type=album" alt="404" />
                     </div>
 
                     <div className={s.mainInfo}>
