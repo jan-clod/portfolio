@@ -170,6 +170,9 @@ a :hover {
 
   font-size: larger;
 }
+.skilContainer  li{
+  text-align: start;
+}
 .icon {
   filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.3));
   width: 60px;
