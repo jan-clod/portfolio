@@ -170,7 +170,7 @@ a :hover {
 
   font-size: larger;
 }
-.skilContainer  li{
+.skilContainer li {
   text-align: start;
 }
 .icon {
@@ -203,7 +203,6 @@ a :hover {
   font-family: "Exo 2", sans-serif;
   font-family: "News Cycle", sans-serif;
 }
-
 .imgWork {
   height: 200px;
   margin: 30px;
@@ -222,6 +221,11 @@ a :hover {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+.imgWork:hover {
+  transition:ease-in-out 1s; /* Время эффекта */
+  transform: scale(2.8); /* Увеличиваем масштаб */
+}
+
 /* ----------DownBack--------------- */
 .blockDown {
   width: 100vw;
@@ -243,11 +247,11 @@ a :hover {
   height: 40px;
   font-size: 20px;
 }
-.blockDown img{
+.blockDown img {
   height: 45px;
   margin: 10px;
 }
-.blockDown p{
+.blockDown p {
   font-family: "Exo 2", sans-serif;
   display: flex;
   align-items: center;
@@ -258,7 +262,10 @@ a :hover {
   margin-top: 50px;
   text-align: center;
 }
-
+.blockDown li:hover {
+  transition: 0.19s; /* Время эффекта */
+  transform: scale(1.2); /* Увеличиваем масштаб */
+}
 
 @media (max-width: 1081px) {
   .container {

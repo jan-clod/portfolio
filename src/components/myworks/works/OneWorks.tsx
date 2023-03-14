@@ -1,4 +1,5 @@
 import s from './../../header/Header.module.css'
+import React from 'react';
 
 type propsType = {
     name: string
@@ -9,10 +10,9 @@ type propsType = {
     href?: string
     text: string
     props?: any
-    
-}
-export const OneWorks: React.FC<propsType> = ({name,img,img2,img3,img4,text,href,...props}) => {
 
+}
+export const OneWorks: React.FC<propsType> = ({ name, img, img2, img3, img4, text, href, ...props }) => {
     return (
         <div className={s.OneWorksBlock}>
             <div className={'🔗' + s.NameOneWork}>
