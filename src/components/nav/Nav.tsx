@@ -11,10 +11,10 @@ export const Nav = () => {
     
     return (
         <div className={s.nav}>
-            <p onClick={()=>click(0)}>Главная</p>
-            <p onClick={()=>click(850)}>Скилы</p>
-            <p onClick={()=>click(1900)}>Проекты</p>
-            <p onClick={()=>click(9000)}>Контакты</p>
+            <p onClick={()=>click(0)}>Top</p>
+            <p onClick={()=>click(850)}>Skills</p>
+            <p onClick={()=>click(1900)}>Projects</p>
+            <p onClick={()=>click(9000)}>Contacts</p>
         </div>
 
     )

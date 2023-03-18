@@ -80,14 +80,18 @@ a :hover {
   display: flex; /* задаем родителю */
   justify-content: space-between; /* дочерние элементы в конец по горизонтальной оси */
   align-items: center; /* дочерние элементы по центру по вертикальной оси */
+
+  font-family: "Blinker", sans-serif;
+  font-size: 15px;
 }
 .head h1 {
   margin: 0 30px;
+  font-family: "Poiret One", cursive;
 }
 
 /* -------------nav--------------- */
 .nav {
-  width: 300px;
+  width: 270px;
   display: flex; /* задаем ребенку */
   justify-content: space-between; /* растягивает на ширину родит блока с равными промежутками между ними */
 
@@ -159,6 +163,7 @@ a :hover {
 }
 .mainPhoto img {
   width: 100%;
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.356));
 }
 
 /* -----------skillSSS-------------- */
@@ -201,6 +206,9 @@ a :hover {
 }
 .skilContainer p {
   width: 90%;
+  font-family: "Blinker", sans-serif;
+  text-align: center;
+  color: rgb(227, 227, 227);
 }
 /* ----------mywork----------------- */
 
@@ -220,7 +228,7 @@ a :hover {
   align-items: center;
   text-align: justify;
   justify-content: space-around;
-  margin: 4vh 8vw;
+  margin: 4vh 4vw;
   font-size: large;
 
   font-family: "Exo 2", sans-serif;
