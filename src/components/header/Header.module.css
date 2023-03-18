@@ -4,6 +4,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=News+Cycle&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=Montserrat+Alternates&family=News+Cycle&family=Poiret+One&family=Rubik+Iso&family=Sono:wght@300&family=Special+Elite&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Blinker:wght@600&family=Special+Elite&display=swap");
+
 :root {
   background-color: rgb(52, 54, 54);
 }
@@ -123,18 +127,35 @@ a :hover {
   align-items: center;
 }
 .mainInfo {
-  width: 300px;
+  width: 500px;
   height: 300px;
   padding: 20px;
-  background-color: rgb(255, 255, 255);
-  color: rgb(1, 12, 21);
+  margin-left: -40px;
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(255, 255, 255);
+  z-index: 2;
+  font-size: large;
+  font-family: "Montserrat Alternates", sans-serif;
 }
-.mainInfo a {
-  color: black;
+.mainInfo .mainH1 {
+  margin-left: -120px;
+  margin-bottom: 0;
+  font-family: "Blinker", sans-serif;
+  font-size: 50px;
 }
+.mainInfo .mainH2 {
+  margin-left: -50px;
+  margin-top: 0;
+  font-family: "Blinker", sans-serif;
+  font-size: 40px;
+}
+.mainInfo .mainH5 {
+  margin-left: -30px;
+}
+
 .mainPhoto {
-  width: 600px;
-  background-color: rgb(255, 200, 0);
+  width: 1000px;
+  background-color: rgba(255, 200, 0, 0);
 }
 .mainPhoto img {
   width: 100%;
@@ -165,7 +186,7 @@ a :hover {
   padding: 30px;
   width: 250px;
   min-height: 250px;
-  background-color: rgba(1, 15, 27, 0.168);
+  background-color: rgba(1, 15, 27, 0.103);
   border-radius: 6px;
 
   font-size: larger;
@@ -178,7 +199,9 @@ a :hover {
   width: 60px;
   height: 60px;
 }
-
+.skilContainer p {
+  width: 90%;
+}
 /* ----------mywork----------------- */
 
 .myWorksContainer {
@@ -222,7 +245,7 @@ a :hover {
   justify-content: space-around;
 }
 .imgWork:hover {
-  transition:ease-in-out 1s; /* Время эффекта */
+  transition: ease-in-out 1s; /* Время эффекта */
   transform: scale(2.8); /* Увеличиваем масштаб */
 }
 
@@ -272,8 +295,12 @@ a :hover {
     width: 100vw;
     border-radius: 10px;
   }
+  .head {
+    height: 65px;
+  }
   .head h1 {
-    margin: 0 3px;
+    font-size: 25px;
+    margin: 5px;
   }
   .nav {
     margin-right: 10px;
@@ -303,5 +330,31 @@ a :hover {
     margin-top: 15vh;
     width: 95vw;
     height: 100%;
+  }
+  .mainInfo {
+    width: 90%;
+    height: 300px;
+    padding: 20px;
+    margin-left: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
+    z-index: 2;
+    font-size: large;
+    font-family: "Montserrat Alternates", sans-serif;
+  }
+  .mainInfo .mainH1 {
+    margin-left: 0px;
+    margin-bottom: 0;
+    font-family: "Blinker", sans-serif;
+    font-size: 40px;
+  }
+  .mainInfo .mainH2 {
+    margin-left: 0px;
+    margin-top: 0;
+    font-family: "Blinker", sans-serif;
+    font-size: 30px;
+  }
+  .mainInfo .mainH5 {
+    margin-left: 0px;
   }
 }
