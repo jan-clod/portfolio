@@ -1,18 +1,19 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Quattrocento+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap");
+
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=News+Cycle&display=swap");
+
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=Montserrat+Alternates&family=News+Cycle&family=Poiret+One&family=Rubik+Iso&family=Sono:wght@300&family=Special+Elite&display=swap");
+
 @import url("https://fonts.googleapis.com/css2?family=Blinker:wght@600&family=Special+Elite&display=swap");
+
 :root {
   background-color: rgb(52, 54, 54);
 }
-
 html {
   overflow-x: hidden;
 }
-
 .App {
   /*     background-image: url("https://img5.goodfon.ru/original/1920x1080/5/7d/volny-tekstury-sinie-ottenki.jpg");
   background-repeat: no-repeat;
@@ -22,50 +23,47 @@ html {
   background-position: center center;
   background-attachment: fixed; */
   background: rgb(31, 31, 31);
-  background: -webkit-gradient(linear, left top, right top, color-stop(19%, rgb(31, 31, 31)), color-stop(89%, rgb(51, 51, 51)));
-  background: linear-gradient(90deg, rgb(31, 31, 31) 19%, rgb(51, 51, 51) 89%);
+  background: linear-gradient(
+    90deg,
+    rgba(31, 31, 31, 1) 19%,
+    rgba(51, 51, 51, 1) 89%
+  );
   color: rgb(255, 255, 255);
   font-family: "Poiret One", cursive;
 }
-
 .App a {
   /*   text-decoration: none; */
   color: aliceblue;
 }
-
 a :hover {
   cursor: pointer;
 }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: -webkit-max-content;
-  height: -moz-max-content;
+  flex-wrap: wrap;
+  align-items: center;
+
   height: max-content;
   min-height: 100vh;
   width: 80vw;
-  background-color: rgb(51, 51, 51);
+
+  background-color: rgba(51, 51, 51, 1);
+
   margin: 0 auto;
   margin-bottom: 30px;
   border-radius: 30px;
-  -webkit-backdrop-filter: blur(1px);
-          backdrop-filter: blur(1px);
-  -webkit-box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.353);
-          box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.353);
+  backdrop-filter: blur(1px);
+  box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.353);
 }
-
 .myColor {
   background-color: rgb(0, 0, 0); /* header,  */
-  background: -webkit-gradient(linear, left top, right top, color-stop(19%, rgb(31, 31, 31)), color-stop(89%, rgb(51, 51, 51)));
-  background: linear-gradient(90deg, rgb(31, 31, 31) 19%, rgb(51, 51, 51) 89%);
-  background-color: rgb(31, 31, 31); /* down */
+  background: linear-gradient(
+    90deg,
+    rgba(31, 31, 31, 1) 19%,
+    rgba(51, 51, 51, 1) 89% /* fon */
+  );
+  background-color: rgba(31, 31, 31, 1); /* down */
 }
 
 /* ------------header---------- */
@@ -74,23 +72,18 @@ a :hover {
   height: 60px;
   width: 100vw;
   z-index: 4;
+
   background-color: rgb(0, 0, 0);
-  -webkit-box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.3);
-          box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.3);
   border-bottom: 2px solid rgb(255, 200, 0);
-  display: -webkit-box;
-  display: -ms-flexbox;
+
   display: flex; /* задаем родителю */
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; /* дочерние элементы в конец по горизонтальной оси */
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; /* дочерние элементы по центру по вертикальной оси */
+  justify-content: space-between; /* дочерние элементы в конец по горизонтальной оси */
+  align-items: center; /* дочерние элементы по центру по вертикальной оси */
+
   font-family: "Blinker", sans-serif;
   font-size: 15px;
 }
-
 .head h1 {
   margin: 0 30px;
   font-family: "Poiret One", cursive;
@@ -99,40 +92,33 @@ a :hover {
 /* -------------nav--------------- */
 .nav {
   width: 270px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex; /* задаем ребенку */
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; /* растягивает на ширину родит блока с равными промежутками между ними */
+  justify-content: space-between; /* растягивает на ширину родит блока с равными промежутками между ними */
+
   margin-right: 40px;
 }
-
 .nav p {
   cursor: pointer;
+
   /*   margin-right: 20px; */
 }
 
 /* -------------main----------------- */
+
 .mainContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
   font-family: "Exo 2", sans-serif;
-  height: -webkit-max-content;
-  height: -moz-max-content;
+
   height: max-content;
   min-height: 100vh;
   width: 80vw;
+
   margin: 0 auto;
+
   /*  
   background-color: #020c249f;
   margin-bottom: 30px;
@@ -140,16 +126,10 @@ a :hover {
   backdrop-filter: blur(5px);
   box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.17); */
 }
-
 .helloPage {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .mainInfo {
   width: 500px;
   height: 300px;
@@ -161,21 +141,18 @@ a :hover {
   font-size: large;
   font-family: "Montserrat Alternates", sans-serif;
 }
-
 .mainInfo .mainH1 {
   margin-left: -120px;
   margin-bottom: 0;
   font-family: "Blinker", sans-serif;
   font-size: 50px;
 }
-
 .mainInfo .mainH2 {
   margin-left: -50px;
   margin-top: 0;
   font-family: "Blinker", sans-serif;
   font-size: 40px;
 }
-
 .mainInfo .mainH5 {
   margin-left: -30px;
 }
@@ -184,27 +161,20 @@ a :hover {
   width: 1000px;
   background-color: rgba(255, 200, 0, 0);
 }
-
 .mainPhoto img {
   width: 100%;
-  -webkit-filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.356));
-          filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.356));
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.356));
 }
 
 /* -----------skillSSS-------------- */
 .skillsBlock {
   text-align: center;
 }
-
 .skilsContainer {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  justify-content: space-around;
+  align-items: flex-start;
   padding-top: 70px;
 }
-
 .skillTitle {
   width: 100vw;
   position: absolute;
@@ -213,36 +183,27 @@ a :hover {
 
 /* ------------skill----------------- */
 .skilContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  flex-direction: column;
+
   margin: 15px;
   padding: 30px;
   width: 250px;
   min-height: 250px;
   background-color: rgba(1, 15, 27, 0.103);
   border-radius: 6px;
+
   font-size: larger;
 }
-
 .skilContainer li {
   text-align: start;
 }
-
 .icon {
-  -webkit-filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.3));
-          filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.3));
   width: 60px;
   height: 60px;
 }
-
 .skilContainer p {
   width: 90%;
   font-family: "Blinker", sans-serif;
@@ -251,167 +212,111 @@ a :hover {
 }
 
 /* ----------mywork----------------- */
+
 .myWorksContainer {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 }
-
 .myWorksContainer h1 {
   margin: 3vh auto 0 auto;
 }
-
 .myWorksContainer_OtherWorks {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: -webkit-max-content;
-  height: -moz-max-content;
+  flex-wrap: wrap;
+  align-items: center;
+
   height: max-content;
   width: 100%;
-  padding: 0 10%;
+  padding:0 10% ;
   padding-bottom: 25px;
-}
-.myWorksContainer_OtherWorks .OtherWorks_one {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.myWorksContainer_OtherWorks .OtherWorks_one div {
-  width: 80%;
+  .OtherWorks_one {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    div {
+      width: 80%;
+    }
+  }
 }
 
 /* ----------OneWork-------------- */
+
 .OneWorksBlock {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   text-align: justify;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   margin: 4vh 4vw;
   font-size: large;
+
   font-family: "Exo 2", sans-serif;
   font-family: "News Cycle", sans-serif;
 }
-
 .imgWork {
   height: 200px;
   margin: 30px;
 }
-
 .blockImgText {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   text-align: justify;
   margin: 20px auto;
   font-size: larger;
   width: 90%;
 }
-
 .imgDivOneWork {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-
 .imgWork:hover {
-  -webkit-transition: ease-in-out 1s;
   transition: ease-in-out 1s; /* Время эффекта */
-  -webkit-transform: scale(2.8);
-          transform: scale(2.8); /* Увеличиваем масштаб */
+  transform: scale(2.8); /* Увеличиваем масштаб */
 }
 
 /* ----------DownBack--------------- */
 .blockDown {
   width: 100vw;
   height: 400px;
-  background-color: rgb(31, 31, 31);
+
+  background-color: rgba(31, 31, 31, 1);
+
   font-size: larger;
 }
-
 .blockDown ul {
   font-family: "Exo 2", sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: flex-end;
+  justify-content: center;
   padding: 80px;
 }
-
 .blockDown li {
   list-style-type: none; /* Убираем маркеры */
   height: 40px;
   font-size: 20px;
 }
-
 .blockDown img {
   height: 45px;
   margin: 10px;
 }
-
 .blockDown p {
   font-family: "Exo 2", sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
 }
-
 .h1Y {
   margin-top: 50px;
   text-align: center;
 }
-
 .blockDown li:hover {
-  -webkit-transition: 0.19s;
   transition: 0.19s; /* Время эффекта */
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2); /* Увеличиваем масштаб */
+  transform: scale(1.2); /* Увеличиваем масштаб */
 }
 
 @media (max-width: 1081px) {
@@ -430,33 +335,18 @@ a :hover {
     margin-right: 10px;
   }
   .helloPage {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .mainContainer {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    align-items: flex-start;
   }
   .OneWorksBlock {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
     text-align: justify;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     margin: 4vh 0;
     font-size: large;
     width: 100vw;

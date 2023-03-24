@@ -48,21 +48,21 @@ export const MyWorks = () => {
                     img3={aim3img}
                     img4={aim4img}
                 />
-                <div >
-                    <h1>Other works:</h1>
-                    <div>
-                        <h3>drag'n'drop</h3>
+                <div className={`${s.myWorksContainer_OtherWorks} `}>
+                    <h1> Other works:</h1>
+                    <div className={`${s.OtherWorks_one} `}>
+                        <h2> <a href={'https://jan-clod.github.io/lending_test/'} >lending</a></h2>
                         <div>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur perferendis blanditiis sed! Recusandae quidem, eum nam soluta dolorum necessitatibus adipisci labore ipsa officia qui animi quos eaque non, molestias fugiat?</p>
                         </div>
                     </div>
-                    <div>
-                        <h3>counter</h3>
+                    <div className={`${s.OtherWorks_one} `}>
+                        <h2><a href={'https://jan-clod.github.io/counter/'} >counter</a></h2>
                         <div>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur perferendis blanditiis sed! Recusandae quidem, eum nam soluta dolorum necessitatibus adipisci labore ipsa officia qui animi quos eaque non, molestias fugiat?</p>
                         </div>
                     </div>
-                </div> 
+                </div>
             </div>
 
         </div>
