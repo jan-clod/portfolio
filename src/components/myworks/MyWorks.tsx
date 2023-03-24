@@ -48,7 +48,7 @@ export const MyWorks = () => {
                     img3={aim3img}
                     img4={aim4img}
                 />
-{/*                 <div >
+                <div >
                     <h1>Other works:</h1>
                     <div>
                         <h3>drag'n'drop</h3>
@@ -62,7 +62,7 @@ export const MyWorks = () => {
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur perferendis blanditiis sed! Recusandae quidem, eum nam soluta dolorum necessitatibus adipisci labore ipsa officia qui animi quos eaque non, molestias fugiat?</p>
                         </div>
                     </div>
-                </div> */}
+                </div> 
             </div>
 
         </div>

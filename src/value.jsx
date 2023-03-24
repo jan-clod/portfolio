@@ -16,7 +16,7 @@ export let textREDUX = ['combineReducers', 'applyMiddleware', 'thunk', 'dispath'
 export let textALL = ['GitHub', 'MUI', 'Axios', 'PWA', 'SPA', 'CLI Tools', 'CORS', 'BEM', 'Rest', 'CRUD', 'KISS', 'Dry', 'SOLID'];
  */
 export let textHTML = 'Использую методологию BEM а также семантическую верстку ';
-export let textCSS = 'В основном работаю с Flex но так же работал с Grid. Для адаптива исполльзую @media query';
+export let textCSS = 'В основном работаю с Flex но так же работал с Grid. Использую перпроцессор SCSS (переменные, миксины, функции). Для адаптива исполльзую @media query.';
 export let textJS = 'Работал с ajax-запросами в основном через библиотеку Axios. Владею таким функционалом как: event Loop, bubbling, Scope, promises, async/await, _proto_ / prototype, DOM & Virtual Dom и др';
 export let textTS = 'Работал с : type, inrterface, class, private/public, <джинерки>, кортежи.';
 export let textREACT = 'Работал как с функциональными компонентами так и с классовыми. При разработке использовал: lifecycle metods, Hooks, pure component &  pure function, HOC,  context, routing, redirect, react-form, react.lazy, react.memo';
