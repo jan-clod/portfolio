@@ -50,18 +50,21 @@ export const MyWorks = () => {
                 />
                 <div className={`${s.myWorksContainer_OtherWorks} `}>
                     <h1> Other works:</h1>
+
                     <div className={`${s.OtherWorks_one} `}>
                         <h2> <a href={'https://jan-clod.github.io/lending_test/'} >lending</a></h2>
                         <div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur perferendis blanditiis sed! Recusandae quidem, eum nam soluta dolorum necessitatibus adipisci labore ipsa officia qui animi quos eaque non, molestias fugiat?</p>
+                            <p>Одностраничный сайт. Выполнен на нативном js и css. Разработан с помощью методологии БЭМ и семантической верстки. Адаптив сайта выполнен спомощью флексов и медиа-запросов. </p>
                         </div>
                     </div>
+
                     <div className={`${s.OtherWorks_one} `}>
                         <h2><a href={'https://jan-clod.github.io/counter/'} >counter</a></h2>
                         <div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur perferendis blanditiis sed! Recusandae quidem, eum nam soluta dolorum necessitatibus adipisci labore ipsa officia qui animi quos eaque non, molestias fugiat?</p>
+                            <p>Счетчик разработан на react. При выполнении использовался компонентный подход.</p>
                         </div>
                     </div>
+                    
                 </div>
             </div>
 
