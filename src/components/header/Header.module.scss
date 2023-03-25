@@ -83,10 +83,10 @@ a :hover {
 
   font-family: "Blinker", sans-serif;
   font-size: 15px;
-}
-.head h1 {
-  margin: 0 30px;
-  font-family: "Poiret One", cursive;
+  h1 {
+    margin: 0 30px;
+    font-family: "Poiret One", cursive;
+  }
 }
 
 /* -------------nav--------------- */
@@ -96,15 +96,16 @@ a :hover {
   justify-content: space-between; /* растягивает на ширину родит блока с равными промежутками между ними */
 
   margin-right: 40px;
-}
-.nav p {
-  cursor: pointer;
-
-  /*   margin-right: 20px; */
+  p {
+    cursor: pointer;
+    &:hover {
+      transition: 0.19s; /* Время эффекта */
+      transform: scale(1.2); /* Увеличиваем масштаб */
+    }
+  }
 }
 
 /* -------------main----------------- */
-
 .mainContainer {
   display: flex;
   flex-wrap: wrap;
@@ -118,17 +119,10 @@ a :hover {
   width: 80vw;
 
   margin: 0 auto;
-
-  /*  
-  background-color: #020c249f;
-  margin-bottom: 30px;
-  border-radius: 50px;
-  backdrop-filter: blur(5px);
-  box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.17); */
-}
-.helloPage {
-  display: flex;
-  align-items: center;
+  .helloPage {
+    display: flex;
+    align-items: center;
+  }
 }
 .mainInfo {
   width: 500px;
@@ -140,23 +134,22 @@ a :hover {
   z-index: 2;
   font-size: large;
   font-family: "Montserrat Alternates", sans-serif;
+  .mainH1 {
+    margin-left: -120px;
+    margin-bottom: 0;
+    font-family: "Blinker", sans-serif;
+    font-size: 50px;
+  }
+  .mainH2 {
+    margin-left: -50px;
+    margin-top: 0;
+    font-family: "Blinker", sans-serif;
+    font-size: 40px;
+  }
+  .mainH5 {
+    margin-left: -30px;
+  }
 }
-.mainInfo .mainH1 {
-  margin-left: -120px;
-  margin-bottom: 0;
-  font-family: "Blinker", sans-serif;
-  font-size: 50px;
-}
-.mainInfo .mainH2 {
-  margin-left: -50px;
-  margin-top: 0;
-  font-family: "Blinker", sans-serif;
-  font-size: 40px;
-}
-.mainInfo .mainH5 {
-  margin-left: -30px;
-}
-
 .mainPhoto {
   width: 1000px;
   background-color: rgba(255, 200, 0, 0);
@@ -227,16 +220,24 @@ a :hover {
 
   height: max-content;
   width: 100%;
-  padding:0 10% ;
+  padding: 0 10%;
   padding-bottom: 25px;
+
+  font-family: "Exo 2", sans-serif;
+  font-family: "News Cycle", sans-serif;
   .OtherWorks_one {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    
+    h2 {
+      width: 10vw;
+    }
     div {
-      width: 80%;
+      width: 60vw;
+    }
+    p {
+      width: 100%;
     }
   }
 }
@@ -350,6 +351,19 @@ a :hover {
     margin: 4vh 0;
     font-size: large;
     width: 100vw;
+  }
+  .myWorksContainer_OtherWorks {
+    padding: 0;
+    margin: 0 5vw;
+    .OtherWorks_one {
+      flex-direction: column;
+      h2 {
+        width: 90vw;
+      }
+      div {
+        width: 90vw;
+      }
+    }
   }
   .imgWork {
     height: 150px;
