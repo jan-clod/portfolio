@@ -20,7 +20,7 @@ export const MyWorks = () => {
     return (
         <div className={s.myWorksBlock}>
             <div className={`${s.myWorksContainer} ${s.container}`}>
-                <h1 onClick={(event) => ev(event)} >Mои работы</h1>
+                <h1 onClick={(event) => ev(event)} >My works</h1>
                 <OneWorks
                     name={'Social Network'}
                     text={textSocialNetwork}
@@ -64,11 +64,18 @@ export const MyWorks = () => {
                             <p>Счетчик разработан на react. При выполнении использовался компонентный подход.</p>
                         </div>
                     </div>
-                    
+
+                    <div className={`${s.OtherWorks_one} `}>
+                        <h2><a href={'https://jan-clod.github.io/Countdown-Clock/'} >Countdown-Clock</a></h2>
+                        <div>
+                            <p>Счетчик обратного отсчета, разработан на js.</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
         </div>
 
     )
-} 
+} //

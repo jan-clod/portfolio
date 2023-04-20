@@ -13,7 +13,7 @@ import {  textHTML, textJS, textTS, textREACT, textREDUX, textGIT, textALL, text
 export const Skils = () => {
     return (
         <div className={`${s.skillsBlock} `}>
-            <h1 className={s.skillTitle}>skills</h1>
+            <h1 className={s.skillTitle}>Skills</h1>
             <div className={`${s.skilsContainer} ${s.container}`}>
                 <Skill name={'html '} body={textHTML} img={htmlImg} />
                 <Skill name={'css '} body={textCSS} img={cssImg} />
