@@ -20,6 +20,6 @@ export let textCSS = 'В основном работаю с Flex но так ж�
 export let textJS = 'Работал с ajax-запросами в основном через библиотеку Axios. Владею таким функционалом как: event Loop, bubbling, Scope, promises, async/await, _proto_ / prototype, DOM & Virtual Dom и др';
 export let textTS = 'Работал с : type, inrterface, class, private/public, <джинерки>, кортежи.';
 export let textREACT = 'Работал как с функциональными компонентами так и с классовыми. При разработке использовал: lifecycle metods, Hooks, pure component &  pure function, HOC,  context, routing, redirect, react-form, react.lazy, react.memo';
-export let textGIT = 'Знаком с такими камандами: config, init, commit, clone, status, add, pull, show, push, branch, diff, rm ';
+export let textGIT = 'Работаю с такими камандами: config, init, commit, clone, status, add, pull, show, push, branch, diff, rm ';
 export let textREDUX = 'combineReducers, applyMiddleware, thunk, dispath, createStore, connect, actionCreator, reduxToolkit';
 export let textALL = 'Использую такие инструменты как: GitHub, MUI, Axios, PWA, SPA, CLI Tools. Пользуюсь такими методами и принципами: CORS, BEM, Rest, CRUD, KISS, Dry, SOLID';
