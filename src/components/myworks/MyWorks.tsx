@@ -6,6 +6,10 @@ let textSocialNetwork = `Во время обучения одним из сер
 let hrefSocialNetwork = 'https://jan-clod.github.io/tsx-social-network-41week/'
 let textToDoList = 'Приложение разработано на реакт совместно с использованием typescript. Так же в приложении используются такие библиотеки как uuid и MUI. Структура приложения была разбита на универсальные компонеты для возможности многократного использования. Адаптивная верстка реализована с помощью mui-grid. '
 let textAimGame = 'Написан на чистом java scipt. Суть игры: выбрать в меню продолжительность игры и на время нажимать на рандомно появляющиеся круги. В конце инры выводится счет и кнопка начать занаво. Для разработки использовался функциональный подход. При котором я лучше научился навешивать события на элементы а так же поработол со стилями'
+let chatText ='. С использованием WebSocket и api-itIncubator. Верстка адаптирована под размеры меньше 500px(mobile) и свыше (desktop). Для верстки использовал препроцессор scss. При запуске приложения необходимо авторизоваться. Во вкладке профиль с сервера загружаются данные о пользователе и там же можно изменить их (т.е. put-запросом обновить данные) Использовал БЭМ-методологию. Во вкладке профиля если мы будем изменять к примеру статус и отключился интернет, запрос каждые три секунды будет рекурсивным способом отправляться, пока не отправится успешно на сервер. Во вкладке чат при потере соединения будет изменен статус WebSocket-канала и каждые три секунды будет выполняться функция создания нового канала пока он успешно не создастся'
+let chatImg1 = 'https://sun9-71.userapi.com/impg/Zf3ZvmzsYFCeFfiBu_sDas8No5872tOamfnlyA/SQOpbUJLmIo.jpg?size=1918x926&quality=95&sign=f53d05899b0fedc3a814e153a5502c3e&type=album';
+let chatImg2 = 'https://sun9-55.userapi.com/impg/bpD5DeV4w1ohx0GVo_j13nS1V0YyVn4Q0DcZmw/NL0ORCGiO0w.jpg?size=1918x928&quality=95&sign=e15c15bb1b4530e5e0db33e28b9f53dc&type=album';
+let chatImg3 = 'https://sun9-17.userapi.com/impg/iE59y02Nxpl1i1Ad128s51gq7B2k-mqc7xoZUw/45Zy7YT2UYk.jpg?size=389x845&quality=95&sign=ac5f8e9fdcb3487ff2e9bef44b808cc8&type=album';
 let a = `${textSocialNetwork} qwe`
 let sn1img = 'https://sun9-36.userapi.com/impg/K7I-zIGOXeSGTu0CEsN0UlKoA3PnJHKuMQkh1A/4WFT-nZPa_Y.jpg?size=1916x936&quality=95&sign=40bd4924d2ee282ed90483e51b543290&type=album'
 let aim1img = 'https://sun9-73.userapi.com/impg/YGQKv1VPfGZNxtU0xpjvhLD_QVSjX05uDU51yQ/JAQYhZrIzZg.jpg?size=1920x935&quality=95&sign=cd781e1f059f1a31ea7ffec80de18940&type=album'
@@ -41,30 +45,35 @@ export const MyWorks = () => {
                 />
 
                 <OneWorks
-                    name={'Dots game'}
-                    text={textAimGame}
-                    img={aim1img}
-                    img2={aim2img}
-                    img3={aim3img}
-                    img4={aim4img}
+                    name={'Chat'}
+                    text={chatText}
+                    href={'https://github.com/jan-clod/chat_websocket'}
+                    img={chatImg1}
+                    img2={chatImg2}
+                    img3={chatImg3}
                 />
                 <div className={`${s.myWorksContainer_OtherWorks} `}>
                     <h1> Other works:</h1>
 
                     <div className={`${s.OtherWorks_one} `}>
-                        <h2> <a href={'https://jan-clod.github.io/lending_test/'} >lending</a></h2>
+                        <h2> <a href={'https://jan-clod.github.io/lending_test/'} >Lending</a></h2>
                         <div>
                             <p>Одностраничный сайт. Выполнен на нативном js и css. Разработан с помощью методологии БЭМ и семантической верстки. Адаптив сайта выполнен спомощью флексов и медиа-запросов. </p>
                         </div>
                     </div>
 
                     <div className={`${s.OtherWorks_one} `}>
-                        <h2><a href={'https://jan-clod.github.io/counter/'} >counter</a></h2>
+                        <h2><a href={'https://jan-clod.github.io/counter/'} >Counter</a></h2>
                         <div>
                             <p>Счетчик разработан на react. При выполнении использовался компонентный подход.</p>
                         </div>
                     </div>
-
+                    <div className={`${s.OtherWorks_one} `}>
+                        <h2><a href={'https://github.com/jan-clod/aim_game'} >Aim game</a></h2>
+                        <div>
+                            <p>{textAimGame}</p>
+                        </div>
+                    </div>
                     <div className={`${s.OtherWorks_one} `}>
                         <h2><a href={'https://jan-clod.github.io/Countdown-Clock/'} >Countdown-Clock</a></h2>
                         <div>
